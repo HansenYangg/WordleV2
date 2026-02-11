@@ -1,14 +1,14 @@
-# 🚀 Wordle Neon Rush
+# 🚀 Wordle Rush
 
-A futuristic, cyberpunk-themed Wordle clone with a **speed rush twist**! Race against the clock, build combos, and dominate the leaderboards in this neon-powered word puzzle experience.
+A sophisticated, modern Wordle clone with a **speed rush twist**! Race against the clock, build combos, and track your streak in this sleek word puzzle experience.
 
-![Wordle Neon Rush](https://img.shields.io/badge/Status-Ready%20to%20Play-00f0ff?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-1.0.0-ff00ff?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-9d00ff?style=for-the-badge)
+![Wordle Rush](https://img.shields.io/badge/Status-Ready%20to%20Play-6aaa64?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2.0.0-c9b458?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-818384?style=for-the-badge)
 
 ## ✨ The Twist: Speed Rush Mode
 
-Unlike traditional Wordle, **Wordle Neon Rush** adds these exciting features:
+Unlike traditional Wordle, **Wordle Rush** adds these exciting features:
 
 ### ⏱️ **Timer System**
 - **60 seconds** to guess the word!
@@ -29,11 +29,16 @@ Unlike traditional Wordle, **Wordle Neon Rush** adds these exciting features:
 - Streaks save locally and persist across sessions
 - Challenge yourself to beat your record!
 
-### 🎨 **Futuristic Cyberpunk UI**
-- Neon colors (cyan, magenta, purple, green)
-- Glowing effects and smooth animations
-- Particle effects and confetti celebrations
-- Responsive design for all screen sizes
+### 🎨 **Modern Professional UI**
+- Clean Wordle-inspired color scheme (green, yellow, gray)
+- Smooth animations and transitions
+- Minimal particle effects for ambiance
+- Fully responsive design for all screen sizes
+
+### 📚 **Expanded Word List**
+- **2000+ common 5-letter words**
+- Much larger variety than basic Wordle
+- All valid English words
 
 ## 🎮 How to Play
 
@@ -41,9 +46,9 @@ Unlike traditional Wordle, **Wordle Neon Rush** adds these exciting features:
 2. **Type** your guess using your keyboard or click the on-screen keys
 3. **Press ENTER** to submit your guess
 4. **Watch the colors** to guide your next guess:
-   - 🟢 **Green (Neon)** = Correct letter in correct position
-   - 🟣 **Magenta** = Correct letter in wrong position
-   - ⚫ **Gray** = Letter not in word
+   - 🟩 **Green** = Correct letter in correct position
+   - 🟨 **Yellow** = Correct letter in wrong position
+   - ⬛ **Gray** = Letter not in word
 
 5. **Beat the timer** before 60 seconds run out!
 6. **Use power-ups** strategically to help you win
@@ -115,7 +120,7 @@ http://localhost:8000
 WordleV2/
 │
 ├── index.html          # Main HTML structure
-├── styles.css          # Futuristic cyberpunk styling
+├── styles.css          # Modern professional styling
 ├── game.js            # Game logic, timer, combos, power-ups
 └── README.md          # This file!
 ```
@@ -127,22 +132,22 @@ WordleV2/
 - ✅ **Power-up system** (Time Boost, Reveal Letter)
 - ✅ **Streak tracking** (persists with localStorage)
 - ✅ **Dynamic scoring** (Base × Combo × Time Bonus)
-- ✅ **500+ word dictionary**
+- ✅ **2000+ word dictionary** (massively expanded!)
 - ✅ **Fully responsive** design
 - ✅ **Keyboard support** (physical + virtual)
-- ✅ **Smooth animations** and particle effects
+- ✅ **Smooth animations** and transitions
 - ✅ **Confetti celebrations** on win
-- ✅ **Neon cyberpunk aesthetic**
-- ✅ **Sound-ready** (visual feedback included)
+- ✅ **Clean Wordle-inspired aesthetic**
+- ✅ **Professional, mature design**
 
 ## 🎨 Design Philosophy
 
-**Wordle Neon Rush** embraces a futuristic cyberpunk aesthetic:
+**Wordle Rush** embraces a clean, professional aesthetic inspired by the original Wordle:
 
-- **Color Palette**: Neon cyan, magenta, purple, and green against a dark space background
+- **Color Palette**: Classic Wordle colors - green (#6aaa64), yellow (#c9b458), and gray against a dark minimalist background
 - **Typography**: Orbitron for headers, Rajdhani for body text
-- **Effects**: Glowing borders, animated particles, smooth transitions
-- **Theme**: Retro-futuristic with a modern twist
+- **Effects**: Subtle animations, minimal particle effects, smooth transitions
+- **Theme**: Modern, sophisticated, and distraction-free
 
 ## 💯 Scoring System
 
