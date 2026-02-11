@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Neon Rush 🚀</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                <span class="neon-text">WORDLE</span>
+                <span class="neon-text-alt">NEON RUSH</span>
+            </h1>
+            <p class="subtitle">Race against time in this cyberpunk word puzzle! ⚡</p>
+        </header>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-label">TIMER</div>
+                <div class="stat-value timer" id="timer">60.0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">SCORE</div>
+                <div class="stat-value" id="score">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">COMBO</div>
+                <div class="stat-value combo" id="combo">x1</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">STREAK</div>
+                <div class="stat-value" id="streak">0</div>
+            </div>
+        </div>
+
+        <div class="power-ups" id="powerUps">
+            <button class="power-up-btn" id="timeBoost" title="Add 10 seconds">
+                <span class="power-up-icon">⏱️</span>
+                <span class="power-up-count" id="timeBoostCount">2</span>
+            </button>
+            <button class="power-up-btn" id="revealLetter" title="Reveal a letter">
+                <span class="power-up-icon">💡</span>
+                <span class="power-up-count" id="revealLetterCount">1</span>
+            </button>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <div class="keyboard" id="keyboard"></div>
+
+        <div class="controls">
+            <button class="btn btn-primary" id="newGameBtn">NEW GAME</button>
+            <button class="btn btn-secondary" id="howToPlayBtn">HOW TO PLAY</button>
+        </div>
+
+        <div class="message-container" id="messageContainer"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2 class="modal-title" id="modalTitle">How to Play</h2>
+            <div class="modal-body" id="modalBody">
+                <div class="instructions">
+                    <h3>🎯 Objective</h3>
+                    <p>Guess the 5-letter word before time runs out!</p>
+
+                    <h3>⚡ The Twist: Speed Rush Mode</h3>
+                    <ul>
+                        <li><strong>Timer:</strong> You have 60 seconds to guess the word</li>
+                        <li><strong>Combo System:</strong> Correct letters in a row increase your multiplier</li>
+                        <li><strong>Speed Bonus:</strong> Faster guesses = more points!</li>
+                        <li><strong>Streak:</strong> Win consecutive games to build your streak</li>
+                    </ul>
+
+                    <h3>🎨 Color Guide</h3>
+                    <div class="color-demo">
+                        <div class="demo-tile correct">L</div>
+                        <span>Correct position</span>
+                    </div>
+                    <div class="color-demo">
+                        <div class="demo-tile present">E</div>
+                        <span>Wrong position</span>
+                    </div>
+                    <div class="color-demo">
+                        <div class="demo-tile absent">X</div>
+                        <span>Not in word</span>
+                    </div>
+
+                    <h3>🚀 Power-Ups</h3>
+                    <ul>
+                        <li><strong>⏱️ Time Boost:</strong> Add 10 seconds to the timer</li>
+                        <li><strong>💡 Reveal Letter:</strong> Reveal a random correct letter</li>
+                    </ul>
+
+                    <h3>💯 Scoring</h3>
+                    <p>Base score × Combo multiplier × Time bonus = Total Score</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
